@@ -19,12 +19,12 @@ app = FastAPI()
 
 @app.get("/")
 async def read_root():
-    return {"Hello": "World"}
+    return {"Hello": "Earl"}
 
 
 @app.get("/ping")
 async def health_check():
-    return "pong"
+    return "pong donkey kong"
 
 
 @app.get("/items/{item_id}")

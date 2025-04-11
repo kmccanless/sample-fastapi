@@ -13,4 +13,4 @@ RUN pip install -r /app/requirements.txt
 COPY ./app /app/app
 
 # Init command
-CMD ["opentelemetry-instrument", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5002"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5002", "--reload"]
